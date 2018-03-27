@@ -1,3 +1,4 @@
+本文主要参考了搜狐上的一篇文章，强烈推荐大家看一看http://www.sohu.com/a/218609089_500659
    1、Capsule 是什么？
    传统的神经网络的神经元就只是一个标量，它能代表的信息很少，比如某个神经元表示了眼睛这个特征，那么与其相连的上层的神经元是否包含了这个特征就通过权重的
 大小来表征，当然，这也仅仅只能表征是否含有羽毛这个特征，不能具体的给出羽毛的详细信息如：单眼皮还是双眼皮，瞳孔的颜色之类。而capsule神经元则是一个向量，
@@ -20,3 +21,4 @@
       for all capsule j in layer (l + 1): vj ← squash(sj ) 
       for all capsule i in layer l and capsule j in layer (l + 1): bij ← bij + ˆuj|i.vj
    return vj
+  
